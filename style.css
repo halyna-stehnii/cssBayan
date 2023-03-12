@@ -27,7 +27,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   background-color: #f4f4f4;
-  color: #3a3a3a;
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
 }
@@ -40,6 +39,7 @@ img {
 
 .accordion-container {
   background-color: #fff;
+  color: #5969f1;
   max-width: 60vw;
   margin: 3rem auto;
   padding: 1rem;
@@ -47,18 +47,23 @@ img {
 
 .accordion-container h1 {
   font-weight: 700;
+  color: #3a3a3a;
 }
 
 .accordion {
   font-size: 1.5rem;
 }
 
-.meme-container {
-
+.accordion label:hover {
+  cursor: pointer;
 }
 
 .meme-input:checked ~ .meme-content {
   max-height: 100rem;
+}
+
+.meme-input:checked ~ .meme-label {
+  color: #3a3a3a;
 }
 
 .meme-label {
@@ -73,11 +78,13 @@ img {
   display: inline-block;
 }
 
+.meme-label:hover {
+  color: #3a3a3a;
+}
+
 .meme-content {
   max-height: 0;
 	overflow: hidden;
-
-	/* Set our transitions up. */
 	-webkit-transition: max-height 0.8s;
 	-moz-transition: max-height 0.8s;
 	transition: max-height 0.8s;
@@ -91,5 +98,28 @@ img {
 
 .meme-input {
   display: none;
+}
+
+.icon {
+  color: #3a3a3a;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.accordion-container:hover .icon {
+  opacity: 1;
+
+}
+
+.meme-input:checked .icon {
+  color: red;
+}
+
+.meme-input:checked .icon {
+  color: red;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
