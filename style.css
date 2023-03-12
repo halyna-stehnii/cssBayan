@@ -112,12 +112,7 @@ img {
 
 }
 
-.meme-input:checked .icon {
-  color: red;
-}
-
-.meme-input:checked .icon {
-  color: red;
+.meme-input:checked + .meme-label > .icon {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
