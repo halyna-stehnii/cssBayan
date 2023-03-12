@@ -26,6 +26,10 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: #f4f4f4;
+  color: #3a3a3a;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Make images easier to work with */
@@ -33,3 +37,59 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.accordion-container {
+  background-color: #fff;
+  max-width: 60vw;
+  margin: 3rem auto;
+  padding: 1rem;
+}
+
+.accordion-container h1 {
+  font-weight: 700;
+}
+
+.accordion {
+  font-size: 1.5rem;
+}
+
+.meme-container {
+
+}
+
+.meme-input:checked ~ .meme-content {
+  max-height: 100rem;
+}
+
+.meme-label {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 1rem 0;
+  border-top: 0.1rem solid #5e5e5e;
+}
+
+.meme-label span {
+  display: inline-block;
+}
+
+.meme-content {
+  max-height: 0;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+.meme-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-input {
+  display: none;
+}
+
