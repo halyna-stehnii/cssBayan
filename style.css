@@ -79,10 +79,6 @@ img {
   display: inline-block;
 }
 
-.meme-label:hover {
-  color: #3a3a3a;
-}
-
 .meme-content {
   display: flex;
   justify-content: center;
@@ -97,6 +93,10 @@ img {
 
 label:hover .meme-content {
   max-height: 40.4375rem;
+}
+
+label:hover .meme-label {
+  color: #3a3a3a;
 }
 
 .meme-content:active {
