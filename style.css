@@ -60,7 +60,7 @@ img {
 }
 
 .meme-input:checked ~ .meme-content {
-  max-height: 100rem;
+  max-height: 40.4375rem;
 }
 
 .meme-input:checked ~ .meme-label {
@@ -84,6 +84,10 @@ img {
 }
 
 .meme-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   max-height: 0;
 	overflow: hidden;
 	-webkit-transition: max-height 0.8s;
@@ -91,10 +95,13 @@ img {
 	transition: max-height 0.8s;
 }
 
-.meme-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+label:hover .meme-content {
+  max-height: 40.4375rem;
+}
+
+.meme-content:active {
+  opacity: 0.5;
+  transition: all 0.5s ease-out;
 }
 
 .meme-input {
